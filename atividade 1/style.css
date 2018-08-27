@@ -1,0 +1,16 @@
+th {
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+tr {
+    text-align: left;
+}
+.content {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+#preco {
+    margin-right: auto;
+    margin-left: auto;
+}
