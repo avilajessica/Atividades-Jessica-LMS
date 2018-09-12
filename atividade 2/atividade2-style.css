@@ -1,0 +1,32 @@
+#conteudo {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    max-width: 50%;
+    background: white;
+}
+line {
+    stroke: black;
+    stroke-width: 2px;
+}
+circle {
+    stroke: black;
+    stroke-width: 2px;
+    fill: transparent;
+}
+svg {
+    border: 1px solid black;
+}
+article {
+    text-align: left;
+}
+body {
+    background: white;
+}
+#menu {
+    float: right;
+}
+#titulo{
+    font-family: Helvetica;
+    text-align: left;
+}

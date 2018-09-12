@@ -1,0 +1,71 @@
+#conteudo {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 60%;
+}
+h1{
+    color: #FFC1C1;
+}
+h2{
+    text-align: left;
+    font-size: 1.5em;
+    font-family: louis george café;
+    color: #ffffff;
+}
+line {
+    stroke: black;
+    stroke-width: 2px;
+}
+circle {
+    stroke: black;
+    stroke-width: 2px;
+    fill: transparent;
+}
+svg {
+    border-style: dashed solid dotted double;
+    border-color: purple lightgreen pink lightskyblue;
+}
+article {
+    text-align: left;
+    padding: 8px;
+}
+body {
+    background: white;
+}
+#menu {
+    float: right;
+}
+#titulo{
+    font-family: alex brush;
+    font-size: 3.5rem;
+    text-align: left;
+}
+body{
+    background-image: linear-gradient(#CD6889, #ffffff);
+}
+a{
+    text-decoration: none;
+    color: #FFC1C1;
+    font-family: louis george café light; 
+}
+.minha-classe{
+    color: #8B2252;
+}
+.fonte-maior{
+    font-size: 0.7cm;
+}
+.fonte-menor{
+    font-size: 12px
+}
+#formulario{
+    font-family: louis george café;
+    font-size: 15px;
+}
+p{
+    font-family: ebrima;
+    color: #363636;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+}
