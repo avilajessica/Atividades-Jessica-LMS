@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#img {
+    height: 44px;
+    padding: 20px 13px 2px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.layout .nav-superior {
+    background-color: #4CAF50;
+    font-family: "Segoe UI",Arial,sans-serif;
+    overflow: hidden;
+}
+
+.layout {
+    overflow: hidden;
+}
+
+.layout ul {
+    list-style-type: none;
+}
+.lateral {
+    background-color: white;
+    float: left;
+    width: 15%;
+    height: 612px;
+    box-shadow: 5px 8px 15px #DCDCDC; 
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.nav-superior .dropdown .conteudo-dropdown .menu-dropdown {
+    background-color: #ffffff;
+    margin: 5%;
+    width: 210px;
+
+}
+
+.layout .lateral {
+    color: black;
+    display: block;
+}
+
+.lateral li {
+    padding: 2% 4%;
+}
+
+.lateral h2 {
+    padding: 2% 4% 8%;
+}
+
+.layout .lateral ul li:hover {
+    background-color: #D3D3D3;
+}
+
+.layout .nav-superior .dropdown .conteudo-dropdown ul li:hover {
+    background-color: #D3D3D3;
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .botao-dropdown {
+    padding: 16px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    width: 180px;
+}
+
+.dropdown .conteudo-dropdown {
+    position: absolute;
+    display: none;
+    box-shadow: 5px 8px 15px #DCDCDC;
+    
+}
+
+.dropdown:hover .conteudo-dropdown {
+    display: block;
+}
+
+.lateral ul li:hover, .dropdown .botao-dropdown:hover {
+    cursor: pointer;
+}
+
+.dropdown:hover .botao-dropdown {
+    background-color: #ffffff;
+
+}
+
+.layout .lateral ul {
+    list-style-type: none;
+}
+
+.descricao {
+    float: right;
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 4px;
+    position: relative;
+    top: 33px;
+    padding: 0px 15px;
+}
+
+.lista-left {
+    float: left;
+}
+
+.fonte-branca {
+    color: #ffffff;
+}
+.fonte-branca:hover {
+    color: black;
+}
+.nav-superior ul li a, .lateral ul li a {
+    text-decoration: none;
+    color: black;
+}
