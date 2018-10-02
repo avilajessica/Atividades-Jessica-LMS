@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#img {
+    height: 35px;
+    padding: 20px 13px 2px;
+}
+
+.layout .nav-superior {
+    background-color: #CD69C9;
+    font-family: "louis george café", Arial, sans-serif;
+    overflow: hidden;
+}
+
+.layout ul {
+    list-style-type: none;
+}
+
+.nav-superior .dropdown .conteudo-dropdown .menu-dropdown {
+    background-color: #ffffff;
+    width: 210px;
+    padding: 10% 0% 20%;
+}
+
+.layout .lateral {
+    color: black;
+}
+
+.lateral li {
+    padding: 2% 4% 10%;
+}
+
+.layout .lateral ul li:hover {
+    background-color: #FFD700;
+}
+
+.dropdown .menu-dropdown li:hover {
+    background-color: #FFD700;
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown .menu-dropdown li {
+    padding: 8px;
+}
+
+.dropdown {
+    float: left;
+}
+
+.dropdown .botao-dropdown {
+    padding: 15px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    width: 180px;
+    color: black;
+}
+
+.dropdown .conteudo-dropdown {
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 2px 10px #DCDCDC;
+    max-height: 0px;
+    transition: max-height 600ms;
+}
+
+.dropdown:hover .conteudo-dropdown {
+    max-height: 300px;
+}
+
+.lateral {
+    background-color: white;
+    box-shadow: 5px 8px 15px #DCDCDC; 
+    font-family: "louis george café",Arial,sans-serif;
+}
+
+.dropdown:hover .botao-dropdown {
+    background-color: #ffffff;
+    color: #CD69C9;
+
+}
+
+.lateral ul li:hover, .dropdown .botao-dropdown:hover {
+    cursor: pointer;
+}
+
+.layout .lateral ul {
+    list-style-type: none;
+}
+
+.descricao {
+    font-family: "louis george café",Arial,sans-serif;
+    top: 33px;
+    padding: 0px 15px;
+}
+
+.nav-superior ul li a, .lateral ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#news {
+    color: #CD69C9;
+    font-size: 22px;
+    padding: 17% 4% 10%;
+}
+.barra-lateral {
+    background-image: linear-gradient(#ffffff, #CD69C9);
+    font-family: "louis george café", Arial, sans-serif;
+    box-shadow: -5px 8px 15px #DCDCDC;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.layout .barra-lateral ul {
+    list-style-type: none;
+}
+
+#facts {
+    color: #CD69C9;
+    font-size: 22px;
+    padding: 10% 4% 10%;
+}
+
+.barra-lateral li {
+    padding: 2% 4% 10%;
+}
+
+@media screen and (min-width:600px) {
+    .lateral {
+        float: left;
+        width: 25%;
+        height: 645px;
+    }
+    .barra-lateral {
+        float: right;
+        width: 25%;
+        height: 645px;
+    }
+    .descricao {
+        float: right;
+        letter-spacing: 4px;
+        position: relative;
+        top: 33px;
+        padding: 0px 15px;
+    }
+
+    .div-img {
+        float: left;
+    }
+}
+
+.div-img {
+    width: 600px;
+    height: 580px;
+}
+
+.img-animation {
+    margin: 60px 50px;
+    height: 150px;
+    animation-name: marimba;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes marimba {
+    0% {
+        transform: translate(0px) rotate(0px);
+    }
+    25% {
+        transform: translate(300px, 0px) rotate(90deg);
+    }
+    50% {
+        transform: translate(300px, 300px) rotate(180deg);
+    }
+    75% {
+        transform: translate(0px, 300px) rotate(270deg);
+    }
+    100% {
+        transform: translate(0px) rotate(360deg);
+    }
+}
