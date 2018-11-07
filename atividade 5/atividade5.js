@@ -1,5 +1,5 @@
-let botao_sanduiche = document.querySelector(".botao-sanduiche")
-let menu_lateral = document.querySelector(".lateral")
+let botao_sanduiche = document.querySelector(".botao-sanduiche");
+let menu_lateral = document.querySelector(".lateral");
 
 botao_sanduiche.addEventListener("click", function(){
     menu_lateral.classList.toggle("show")
