@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+.entrar {
+    float: right;
+    outline: none;
+    width: 50px;
+    height: 30px;;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1.5px white;
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+    margin: 10px 20px 0px 50px;
+}
+
+.entrar:hover {
+    background-color: white;
+    color: rgb(192, 62, 134);
+}
+
+.layout {
+    overflow: hidden;
+    margin: auto;
+    width: 900px;
+    height: 600px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(221, 37, 138);
+}
+
+.amigo-msg {
+    float: right;
+    width: 600px;
+    height: 50px;
+    background-color: rgb(221, 37, 138);
+}
+
+.amigo-msg #img-perfil {
+    display: none;
+    float: left;
+    height: 30px;
+    margin: 10px 20px;
+}
+
+.amigo-msg #titulo-conversa {
+    float: left;
+    margin: 15px 10px 10px 0px;;
+    font-size: 17px;
+    color: white;
+}
+
+.titulo h2 {
+    font-size: 16px;
+    color: white;
+    padding: 0 0 0 20px;
+}
+
+.layout .barra-contatos {
+    float: left;
+    width: 300px;
+    height: 545px;
+    background-color:  rgb(247, 247, 247);
+}
+
+.layout .novo-grupo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 545px;
+    height: 55px;
+    width: 300px;
+    background-color: rgb(250, 214, 234);
+}
+
+.layout .lista-contatos:hover {
+    cursor: pointer;
+}
+
+.campo-msg {
+    float: right;
+    width: 600px;
+    height: 550px;
+}
+
+.layout .campo-msg .barra-mensagem {
+    overflow-y: scroll;
+    float: right;
+    width: 600px;
+    height: 495px;
+    background-image: linear-gradient(rgb(252, 45, 158), rgb(255, 255, 255));
+}
+
+#barbie-img {
+    margin-left: 30%;
+    margin-top: 25%;
+}
+
+.lista-contatos {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(250, 214, 234);
+    box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+.lista-contatos:hover {
+    background-color: rgb(252, 45, 158);
+}
+
+.barra-contatos img {
+    position: relative;
+    float: left;
+    height: 30px;
+    margin: 20px 15px;
+}
+
+.lista-contatos h2 {
+    position: relative;
+    font-size: 14px;
+}
+
+.campo-msg .msg {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    padding: 8px;
+    overflow: auto;
+}
+
+.campo-msg .msg .input {
+    float: left;
+    padding: 10px;
+    height: 35px;
+    outline: none;
+    width: 475px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px rgb(252, 45, 158);
+    border-radius: 8px;
+    color: rgb(252, 45, 158);
+    font-size: 10px;
+    margin-left: 15px;
+}
+
+.novo-grupo .input-gp {
+    height: 30px;
+    outline: none;
+    width: 95px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px rgb(252, 45, 158);
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 6px;
+}
+
+.bt-criar-gp, .msg button {
+    float: right;
+    outline: none;
+    width: 70px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px rgb(252, 45, 158);
+    border-radius: 10px;
+    background-color: rgb(252, 45, 158);
+    color: white;
+    font-size: 12px;
+    margin-right: 15px;
+    margin-left: 7px;
+}
+
+.bt-criar-gp:hover {
+    background-color: white;
+    color: rgb(252, 45, 158);
+    border: solid 1px white;
+}
+
+.msg button {
+    float: right;
+    outline: none;
+    width: 50px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px rgb(252, 45, 158);
+    border-radius: 10px;
+    background-color: rgb(252, 45, 158);
+    color: white;
+    font-size: 12px;
+}
+
+.msg button:hover {
+    background-color: white;
+    color: rgb(252, 45, 158);
+}
+
+.layout .campo-contatos {
+    float: left;
+    width: 300px;
+    height: 100%;
+    background-color:  rgb(247, 247, 247);
+    box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay {
+    width: 100vw;
+    height: 0;
+    background: rgba(252, 45, 158, 0.7);
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    transition: opacity 900ms, height 0ms 900ms;
+}
+
+.modal-overlay.active {
+    height: 100vh;
+    opacity: 1;
+    transition: opacity 800ms;
+}
+
+.modal-overlay .modal {
+    display: block;
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    left: 40%;
+    top: 12%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.modal-overlay .modal .modal-input {
+    margin-left: 15%;
+    padding: 10px;
+    height: 40px;
+    outline: none;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px rgb(252, 45, 158);
+    border-radius: 8px;
+    color: rgb(252, 45, 158);
+    font-size: 10px;
+}
+
+.modal-overlay .modal p {
+    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 15px;
+    color: rgb(252, 45, 158);
+}
+
+.modal-overlay .modal .close {
+    font-family: Louis George Café, Helvetica, Arial, sans-serif;
+    padding-right: 14px;
+    padding-top: 12px;
+    float: right;   
+    font-size: 19px;
+    cursor: pointer;
+    user-select: none; 
+}
+
+.modal-overlay .modal .close:hover {
+    color: rgb(252, 45, 158);
+}
+
+#msg {
+    display: none;
+}
+
+.fundo {
+   background-color: rgb(252, 45, 158); 
+}

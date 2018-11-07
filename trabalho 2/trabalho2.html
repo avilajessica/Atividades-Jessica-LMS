@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="trabalho2.css">
+    <link rel="wpp icon" href="whatsapp-logo.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="amigo-msg">
+            <img id="img-perfil" src="icon-perfil.png" alt="">
+            <h2 id="titulo-conversa"></h2>
+            <button class="entrar" id="entrar-button">Entrar</button>
+        </div>
+        <div class="campo-contatos">
+            <div class="barra-contatos" id="barra-contatos">
+                <header class="titulo">
+                    <h2>WhatsApp da Barbie Fascista</h2>
+                </header>
+            </div>
+            <div class="novo-grupo">
+                <form id="novo-grupo">
+                    <input id="input-gp-nome" class="input-gp" type="text" placeholder="Nome do grupo" autocomplete="off">
+                    <input id="input-gp-id" class="input-gp" type="text" placeholder="ID do grupo" autocomplete="off">
+                    <button type="submit" class="bt-criar-gp">Criar grupo</button>
+                </form>
+            </div>
+        </div>
+        <div class="campo-msg">
+            <div class="barra-mensagem" id="barra-mensagem">
+                <!-- <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"></h3>
+                    </div>
+                    <div class="panel-body">
+                    </div>
+                </div> -->
+                <img id="barbie-img" src="barbie.jpg" alt="">   
+            </div>
+            <form class="msg" id="msg">
+                <input class="input" type="text" id="input" autocomplete="off">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-overlay">
+        <form class="modal" id="login-form">
+            <span class="close"> x </span>
+            <p>Entre com seu ID:</p>
+            <input class="modal-input" id="login-input" type="text" placeholder="Digite seu ID">
+        </form>
+    </div>
+    <script src="./dados.js"></script>
+    <script src="./trabalho2.js"></script>
+</body>
+
+</html>
