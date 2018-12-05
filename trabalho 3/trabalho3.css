@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-input {
+    width: 80%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 1px #007bff;
+    margin-bottom: 10px;
+}
+
+.login-items {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.btn-cadastro {
+    margin-left: 10px;
+    position: relative;    
+}
+
+.btn-entrar {
+    position: absolute;
+    width: 90.58px;
+    margin-left: 25px;
+}
+
+.largura-drop {
+    width: 230px;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.qtd-input {
+    width: 20%;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: solid 1px #007bff;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #007bff;
+    border-radius: .25rem;
+}
+
+.row-one {
+    margin-bottom: 100px;
+}
+
+.row-two {
+    margin-left: 120px;
+    margin-bottom: 60px;
+}
+
+.row-three {
+    margin-left: 120px;
+}
+
+.preco {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn-sair {
+    margin-right: 25px;
+    display: none;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.btn-finalizar {
+    margin: 40px;
+}
+
+.nav-carrinho {
+    margin-right: 70px;
+}
+
+.no-padding {
+    padding: 0;
+    margin-right: 0;
+}
+
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.social {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+#social-fb:hover {
+    color: #3B5998;
+}
+#social-tw:hover {
+    color: #4099FF;
+}
+#social-gp:hover {
+    color: #d34836;
+}
+#social-em:hover {
+    color: #f39c12;
+}
+
+.footer-h2 {
+    color: #d34836;
+    font-size: 20px;
+}
+
+.margin-top {
+    margin-top: 100px;
+}
+
+.padding-right {
+    padding-right: 0;
+}
+
+.qtd {
+    display: none;
+}
+
+.add-carrinho {
+    display: none;
+}
+
+.drop-carrinho {
+    display: none;
+}

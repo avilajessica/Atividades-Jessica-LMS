@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jessicat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./trabalho3.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="no-padding container-fluid">
+        <div class="row-one row">
+            <div class="padding-right col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">jessicat</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ofertas</a>
+                            </li>
+                            <li class="nav-item dropdown drop-login">
+                                <a class="mudar-botao nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    entre/cadastre-se
+                                </a>
+                                <div class="dropdown-menu largura-drop" aria-labelledby="navbarDropdown">
+                                    <div class="login">
+                                        <p class="login-items" id="login-input" >email:</p>
+                                        <input class="login-input form-control mr-sm-2" id="email" type="email" >
+                                        <div>
+                                            <p></p>
+                                        </div>
+                                        <p class="login-items">senha:</p>
+                                        <input class="login-input form-control mr-sm-2" id="senha" type="password" >
+                                        <div class="dropdown-divider"></div>
+                                            <button class="btn-cadastro btn btn-outline-primary my-2 my-sm-0" id="cadastro-button" type="button">cadastrar</button>
+                                            <button class="btn-entrar btn btn-outline-primary my-2 my-sm-0" id="entrar-button" type="button">entrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown drop-carrinho">
+                                <a class="nav-carrinho nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    meu carrinho
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="carrinho">
+                                        <a href="http://127.0.0.1:5500/trabalho3page2.html" target="target_blank" class="btn-finalizar btn btn-outline-primary my-2 my-sm-0" id="entrar-button">finalizar</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="pesquise por produtos" aria-label="Search">
+                            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">pesquisar</button>
+                        </form> -->
+                        <button class="btn-sair btn btn-outline-danger my-2 my-sm-0" id="sair" type="submit">sair</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="no-padding row-two row">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./midia/moletom1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">moletom vans</h5>
+                        <span class="preco">R$259,99</span> <br>
+                        <div class="qtd">
+                            quantidade:
+                            <input class="qtd-input" type="text">                   
+                        </div>                   
+                        <button class="no-margin add-carrinho btn btn-outline-primary btn-md" type="submit">
+                            adicionar ao carrinho
+                        </button>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./midia/moletom2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">moletom puma</h5>
+                        <span class="preco">R$99,99</span> <br>
+                        <div class="qtd">
+                            quantidade:
+                            <input class="qtd-input" type="text">                   
+                        </div>
+                        <button class="no-margin add-carrinho btn btn-outline-primary btn-md" type="submit">
+                            adicionar ao carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="no-padding col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./midia/moletom3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">moletom adidas</h5>
+                        <span class="preco">R$149,99</span> <br>
+                        <div class="qtd">
+                            quantidade:
+                            <input class="qtd-input" type="text">                   
+                        </div>                   
+                        <button class="no-margin add-carrinho btn btn-outline-primary btn-md" type="submit">
+                            adicionar ao carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="no-padding row-three row">
+            <div class="col-md-4">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img class="card-img-top" src="./midia/moletom4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">moletom supreme</h5>
+                        <span class="preco">R$169,99</span> <br>
+                        <div class="qtd">
+                            quantidade:
+                            <input class="qtd-input" type="text">                   
+                        </div>                   
+                        <button class="no-margin add-carrinho btn btn-outline-primary btn-md" type="submit">
+                            adicionar ao carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./midia/moletom5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">moletom gucci</h5>
+                        <span class="preco">R$3249,99</span> <br>
+                        <div class="qtd">
+                            quantidade:
+                            <input class="qtd-input" type="text">                   
+                        </div>                   
+                        <button class="no-margin add-carrinho btn btn-outline-primary btn-md" type="submit">
+                            adicionar ao carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="no-padding col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./midia/moletom6.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">moletom adidas rose</h5>
+                        <span class="preco">R$219,99</span> <br>
+                        <div class="qtd">
+                            quantidade:
+                            <input class="qtd-input" type="text">                   
+                        </div>                   
+                        <button class="no-margin add-carrinho btn btn-outline-primary btn-md" type="submit">
+                            adicionar ao carrinho
+                        </button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="no-padding col-md-12">
+                <div class="margin-top container">
+                    <hr>
+                        <div class="text-center center-block">
+                            <h2 class="footer-h2 txt-railway">entre em contato conosco:</h2>
+                            <br />
+                                <a href="#"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                                <a href="#"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                                <a href="#"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                                <a href="#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                        </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./dados.js"></script>
+    <script src="./trabalho3.js"></script>
+</body>
+</html>
