@@ -7,15 +7,36 @@ function logarUser() {
     makeGET('usuarios', function (data) {
         let user = data.find(e => e.email === usuario.email);
         if (user && user.senha === usuario.senha) {
-            window.localStorage.setItem(USUARIO_KEY, user);
-            alert('usuário logado');
+            window.localStorage.setItem(USUARIO_KEY, JSON.stringify(user));
             $('.drop-login').hide();
             $('.drop-carrinho').show();
+            alert('usuário logado');
         }
         else {
             alert('nome de usuario e/ou senha invalidos');
         }
     })
+}
+
+function configurarBotaoCadastro() {
+    $('#cadastro-button').click(function (event) {
+        event.preventDefault();
+        cadastrarUser();
+    });
+}
+
+function configurarBotaoEntrar() {
+    $('#entrar-button').click(function (event) {
+        event.preventDefault();
+        logarUser();
+    });
+}
+
+function configurarBotaoSair() {
+    $('#sair').click(function (event) {
+        event.preventDefault();
+        deslogar();
+    });
 }
 
 function estaLogado() {
@@ -24,24 +45,25 @@ function estaLogado() {
     return !!window.localStorage.getItem(USUARIO_KEY);
 }
 
-function botaoSair() {
+function elementosShowOrHide() {
     if (estaLogado()) {
         $('#sair').show();
+        $('.drop-login').hide();
+        $('.drop-carrinho').show();
     }
     else {
         $('#sair').hide();
         $('.qtd').hide();
         $('.add-carrinho').hide();
+        $('.drop-login').show();
+        $('.drop-carrinho').hide();
     }
 }
 
 function deslogar() {
     window.localStorage.removeItem(USUARIO_KEY);
+    elementosShowOrHide();
     alert('usuário saiu');
-    $('.drop-login').show();
-    $('.drop-carrinho').hide();
-
-    botaoSair();
 }
 
 function cadastrarUser() {
@@ -59,24 +81,24 @@ function cadastrarUser() {
 function pegarDadosUsuario() {
     let email = $("#email").val().toString();
     let senha = $("#senha").val().toString();
-    return {email: email, senha: senha};
+    return { email: email, senha: senha };
 }
 
 function cadastroRequisicao(usuario) {
     makePOST('usuarios', usuario, function (data) {
-        window.localStorage.setItem(USUARIO_KEY, data);
-        alert('usuário cadastrado!');
+        window.localStorage.setItem(USUARIO_KEY, JSON.stringify(data));
         $('.drop-login').hide();
         $('.drop-carrinho').show();
-        botaoSair();
+        elementosShowOrHide();
+        alert('usuário cadastrado!');
     });
 }
 
 function makeGET(path, sucesso, error) {
     $.ajax({
         type: 'GET',
-        url: API_LEARN + path,
-        success: (data) => sucesso(data), // colocar .data para o heroi cu
+        url: API_URI + path,
+        success: (data) => sucesso(data.data), // colocar .data para o heroi cu
         error: error
     });
 }
@@ -84,7 +106,7 @@ function makeGET(path, sucesso, error) {
 function makePOST(path, body, sucesso, error) {
     $.ajax({
         type: 'POST',
-        url: API_LEARN + path,
+        url: API_URI + path,
         data: JSON.stringify(body),
         success: sucesso,
         error: error
@@ -98,17 +120,9 @@ function configurarAjax() {
 }
 
 window.addEventListener('load', function () {
-    // configurarAjax();
-    $('#cadastro-button').click(function(event) {
-        event.preventDefault();
-        cadastrarUser();
-    });
-    $('#entrar-button').click(function(event) {
-        event.preventDefault();
-        logarUser();
-    });
-    $('#sair').click(function(event) {
-        event.preventDefault();
-        deslogar();
-    });
+    configurarAjax();
+    elementosShowOrHide();
+    configurarBotaoCadastro();
+    configurarBotaoEntrar();
+    configurarBotaoSair();
 });
